@@ -1,22 +1,37 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+
+/**
+ *main - Prints if number is positive, zero or negative
+ *Description: This program assign a random number to a variable
+ *
+ *Return: return Always (Success)
+ */
+
 int main(void)
 {
 	int n;
 
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-    if (n > 0)
-        printf(" %d is positive ", n);
+srand(time(0));
+n = rand() - RAND_MAX / 2;
 
-    else if (n ==0 )
-        printf(" %d is zero ");
-    
-    else (n >0 && n !=0 )
-        printf(" %d is negative ");
-    return (0);
+if (n > 0)
+{
+printf("%d is positive\n", n);
+}
+
+else if (n == 0)
+{
+printf("%d is zero\n", n);
+}
+
+else
+{
+printf("%d is negative\n", n);
+}
+
+return (0);
+
 }
