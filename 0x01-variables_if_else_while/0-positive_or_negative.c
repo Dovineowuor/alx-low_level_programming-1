@@ -28,7 +28,7 @@ int main(void)
 	if (m == 0)
 	{
 		/*block of code to be executed if the condition1 is false*/
-                printf("The last digits of %d is %d and is 0\n", n, m);
+		printf("The last digits of %d is %d and is 0\n", n, m);
 	}
 	if (m < 0 && m != 0)
 	{
