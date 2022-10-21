@@ -16,17 +16,24 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 		/* your code goes there */
-	if (n > 0)
+	int m;
+
+	m = n % 10;
+
+	if (m > 0)
 	{
 		/* block of code to be executed if condition1 is true*/
-		printf("%d, is positive \n", n);
-		/*block of code to be executed if the condition1 is false*/
-		printf("%d, is zero \n", n);
+		printf("The last digits of %d is %d and is greater than 5\n", n, m);
 	}
-	else
+	if (m == 0)
 	{
-		printf("%d, is negative \n", n);
-	       /* block of code to be executed if the condition1 is false*/
+		/*block of code to be executed if the condition1 is false*/
+                printf("The last digits of %d is %d and is 0\n", n, m);
+	}
+	if (m < 0 && m != 0)
+	{
+		printf("%d, is negative \n", n, m);
+		/* block of code to be executed if the condition1 is false*/
 	}
 	return (0);
 }
