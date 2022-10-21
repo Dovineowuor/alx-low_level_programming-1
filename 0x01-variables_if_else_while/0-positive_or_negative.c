@@ -32,7 +32,7 @@ int main(void)
 	}
 	if (m < 0 && m != 0)
 	{
-		printf("%d, is negative \n", n, m);
+		printf("The last digits of %d is %d and is less than 6 and not 0\n", n, m); 
 		/* block of code to be executed if the condition1 is false*/
 	}
 	return (0);
