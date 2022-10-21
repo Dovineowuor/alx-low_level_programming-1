@@ -19,13 +19,13 @@ int main(void)
 	if (n > 0)
 	{
 		/* block of code to be executed if condition1 is true*/
-		printf("%d, is positive", n);
+		printf("%d, is positive \n", n);
 		/*block of code to be executed if the condition1 is false*/
-		printf("%d, is zero", n);
+		printf("%d, is zero \n", n);
 	}
 	else
 	{
-		printf("%d, is negative", n);
+		printf("%d, is negative \n", n);
 	       /* block of code to be executed if the condition1 is false*/
 	}
 	return (0);
